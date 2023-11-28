@@ -6,7 +6,7 @@
 #    By: hbenaddi <hbenaddi@student.42lehavre.fr>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/21 16:29:36 by hbenaddi          #+#    #+#              #
-#    Updated: 2023/11/21 20:10:13 by hbenaddi         ###   ########.fr        #
+#    Updated: 2023/11/27 19:34:32 by hbenaddi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,8 @@ CC				= clang
 RM				= rm -rf
 CFLAGS			= -Wall -Wextra -Werror -I.
 
-SRCS    		=	
+SRCS    		=	ft_printf.c \
+					ft_printchar.c \
 
 OBJS			=	$(SRCS:.c=.o)
 
