@@ -6,7 +6,7 @@
 /*   By: hbenaddi <hbenaddi@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 20:43:23 by hbenaddi          #+#    #+#             */
-/*   Updated: 2023/11/28 11:20:07 by hbenaddi         ###   ########.fr       */
+/*   Updated: 2023/11/30 13:19:25 by hbenaddi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ int	print_format(char specifier, va_list ap)
 		count += print_digit_maj((long)va_arg(ap, unsigned int), 16);
 	else if (specifier == 'u')
 		count += print_digit((long)va_arg(ap, unsigned int), 10);
+	else if (specifier == 'p')
+		count += print_pointer(va_arg(ap, unsigned long long));
 	else if (specifier == '%')
 		count += write(1, "%", 1);
 	return (count);

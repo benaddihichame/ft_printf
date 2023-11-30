@@ -6,7 +6,7 @@
 #    By: hbenaddi <hbenaddi@student.42lehavre.fr>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/21 16:29:36 by hbenaddi          #+#    #+#              #
-#    Updated: 2023/11/27 19:34:32 by hbenaddi         ###   ########.fr        #
+#    Updated: 2023/11/30 20:02:42 by hbenaddi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ CFLAGS			= -Wall -Wextra -Werror -I.
 
 SRCS    		=	ft_printf.c \
 					ft_printchar.c \
+					print_pointer.c \
 
 OBJS			=	$(SRCS:.c=.o)
 
@@ -30,6 +31,6 @@ clean:
 				$(RM) $(OBJS) 
 fclean:			clean
 				$(RM) $(NAME)	
-re: fclean ${NAME}
+re: fclean all
 
 .PHONY: all, clean, fclean, re

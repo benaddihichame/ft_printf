@@ -6,7 +6,7 @@
 /*   By: hbenaddi <hbenaddi@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 17:49:25 by hbenaddi          #+#    #+#             */
-/*   Updated: 2023/11/28 11:20:16 by hbenaddi         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:08:25 by hbenaddi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,8 @@ int	print_char(int c);
 int	print_string(char *str);
 int	print_digit(long n, int base);
 int	print_digit_maj(long n, int base);
+int	print_pointer(unsigned long long p);
+int	ft_putlonghexa(unsigned long long nl);
+int	ft_putstr(char *s);
+int	ft_putchar(char c);
 #endif
